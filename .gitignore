@@ -1,0 +1,17 @@
+*/bin/
+*/bin/*
+*/obj/
+*/obj/*
+*/*.user
+Libs/
+Libs/*
+Data/
+Data/*
+CommonCS/*
+!CommonCS/*.csproj
+!CommonCS/*.cs
+*.db
+*.rar
+*.zip
+*.chm
+*.suo
