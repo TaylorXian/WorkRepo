@@ -20,7 +20,7 @@ namespace HttpWorker
 		{
 			HtmlDocument doc = new HtmlDocument();
 			doc.OptionOutputAsXml = true;
-			using (Stream stream = WebRequest.Create(url).GetResponse().GetResponseStream())
+			using (Stream stream = MyResponseStream(url))
 			{
 				if (fUTF8)
 				{
@@ -34,6 +34,15 @@ namespace HttpWorker
 			}
 
 			return doc;
+		}
+
+		public static Stream MyResponseStream(string url)
+		{
+			return MyResponse(url).GetResponseStream();
+		}
+		public static WebResponse MyResponse(string url)
+		{
+			return WebRequest.Create(url).GetResponse();
 		}
 	}
 }

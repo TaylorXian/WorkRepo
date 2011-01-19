@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpWorker", "HttpWorker\HttpWorker.csproj", "{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Proj", "Test.Proj\Test.Proj.csproj", "{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
