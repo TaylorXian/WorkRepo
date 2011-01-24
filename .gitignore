@@ -7,6 +7,8 @@ Libs/
 Libs/*
 Data/
 Data/*
+Google/
+Google/*
 CommonCS/*
 !CommonCS/*.csproj
 !CommonCS/*.cs
@@ -14,4 +16,5 @@ CommonCS/*
 *.rar
 *.zip
 *.chm
+*.txt
 *.suo

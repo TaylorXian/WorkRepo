@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEntity", "DataEntity\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonCS", "CommonCS\CommonCS.csproj", "{76952123-F543-4C50-8AD9-7C37B1FDCAA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTranslateAPI", "GoogleTranslateAPI\GoogleTranslateAPI.csproj", "{747718B3-D521-4C6A-8DD1-3D827427AF59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Translate", "Translate\Translate.csproj", "{749B3642-40CF-44CC-84F5-06E67599A66A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,10 @@ Global
 		{76952123-F543-4C50-8AD9-7C37B1FDCAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76952123-F543-4C50-8AD9-7C37B1FDCAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76952123-F543-4C50-8AD9-7C37B1FDCAA4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{749B3642-40CF-44CC-84F5-06E67599A66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{749B3642-40CF-44CC-84F5-06E67599A66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{749B3642-40CF-44CC-84F5-06E67599A66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{749B3642-40CF-44CC-84F5-06E67599A66A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,10 +8,10 @@
     <title>Google З­вы</title>
     <link rel="stylesheet" type="text/css" href="./main.css" />
     <script type="text/javascript" src="https://www.google.com/jsapi?key=INSERT-YOUR-KEY"></script>
-    <script type="text/javascript" src="http://jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="./trans.js"></script>
 
 </head>
-<body>
+<body onload="addjq();">
     <div id="container">
         <div id="header">
             <h2>
@@ -22,10 +22,12 @@
             <input type="hidden" value="" name="web" id="btnGetRequest" />
             <input type="hidden" value="" name="web" id="btn" />
             <div>zh
-            <textarea rows="10" cols="50"></textarea>
+            <textarea rows="10" cols="50" id="source">zhongwen.</textarea>
             </div>
             <div>en
             <textarea rows="10" cols="50"></textarea>
+            </div>
+            <div><span id="result_box">this translate result</span>
             </div>
             <div id="dialog" class="invisible">
                 <div style="margin: 16px auto; float: left;">

@@ -29,7 +29,14 @@ namespace ExcelToSqlite
             return dbpath;
         }
 
-        public static string GetFullFilePath(string relativepath)
+        public static string InitExcel(string filename)
+        {
+            string dbpath = DbPath.GetDbFilepath("./sqlite.db");
+            SQLiteAccess.ConnStringSQLite = SQLiteAccess.GetConnectionString(dbpath);
+            return dbpath;
+        }
+
+		public static string GetFullFilePath(string relativepath)
         {
             return Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), relativepath));
         }

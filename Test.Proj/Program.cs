@@ -21,31 +21,32 @@ namespace Test.Proj
 			Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
 			Console.WriteLine(Directory.GetCurrentDirectory());
 			Console.WriteLine();
+			
+			//Console.ReadKey();
+		}
+
+		private static void TranslateTest()
+		{
 			string respFilename = "./header.txt";
 			StreamWriter sw = new StreamWriter(File.Create(respFilename));
-			string origin = HttpUtility.UrlDecode(TestUrl.URL1);
-			sw.WriteLine(origin); 
-			sw.WriteLine(TestUrl.URL1);
-			sw.WriteLine(HttpUtility.UrlEncode("上帝").ToUpper());
-			WebRequest req = WebRequest.Create(TestUrl.URL2);
-
-			HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
-			//foreach (string str in resp.Headers)
-			//{
-			//    File.AppendAllText(respFilename, str);
-			//}
+			//string origin = HttpUtility.UrlDecode(TestUrl.URL1);
+			//sw.WriteLine(origin); 
+			////sw.WriteLine(TestUrl.URL1);
+			//sw.WriteLine(HttpUtility.UrlEncode("上帝").ToUpper());
+			HttpWebRequest req = (HttpWebRequest)WebRequest.Create(TestUrl.URL3);
+			req.Headers.Add(HttpRequestHeader.AcceptCharset, "utf-8");
+			WebResponse resp = req.GetResponse();
+			for (int i = 0; i < resp.Headers.Count; i++)
+			{
+				sw.WriteLine("{0} {1}", resp.Headers.Keys[i], resp.Headers.Get(i));
+			}
 			Stream stream = resp.GetResponseStream();
-			Console.WriteLine(resp.CharacterSet);
-			Console.WriteLine(resp.ContentEncoding);
-			Console.WriteLine(resp.ContentLength);
 			Console.WriteLine(resp.ContentType);
-			StreamReader sr = new StreamReader(stream, Encoding.Default);
+			StreamReader sr = new StreamReader(stream);
 			sw.WriteLine(sr.CurrentEncoding);
 			sw.WriteLine(sr.ReadToEnd());
 			sr.Close();
 			sw.Close();
-			
-			//Console.ReadKey();
 		}
 	}
 }

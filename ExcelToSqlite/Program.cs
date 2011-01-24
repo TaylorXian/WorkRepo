@@ -20,7 +20,8 @@ namespace ExcelToSqlite
 			//DatabaseAccess da = DatabaseAccess.Create(MyDbType.MySQL,
 			//    "220.113.40.161", "robot", "root", "lenci");
 			//DbPath.DisplayTable(da.ExecuteVector("select * from category where robot_id = 'dianping';"));
-			SQLiteDataNeaten.NeatenPhoneNo();
+			//SQLiteDataNeaten.NeatenPhoneNo();
+			TranslateRoutine.StartTrans();
 			Console.ReadKey();
 		}
 	}

@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpWorker", "HttpWorker\Ht
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Proj", "Test.Proj\Test.Proj.csproj", "{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTranslateAPI", "GoogleTranslateAPI\GoogleTranslateAPI.csproj", "{747718B3-D521-4C6A-8DD1-3D827427AF59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
