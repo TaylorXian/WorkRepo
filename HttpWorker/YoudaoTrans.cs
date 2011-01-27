@@ -10,7 +10,7 @@ namespace HttpWorker
 	{
 		public static string Trans(string content)
 		{
-			if (content.Length < 288)
+			try
 			{
 				System.Threading.Thread.Sleep(3 * 1000);
 				//string url = "http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule&sessionFrom=null";
@@ -25,10 +25,21 @@ namespace HttpWorker
 				string html = HttpProc.Get(url, refer);
 				return ExtractTrans(html);
 			}
-			else
+			catch (Exception ex)
 			{
-				return string.Empty;
+				System.IO.File.AppendAllText("trans.log", ex.Message);
+				System.IO.File.AppendAllText("trans.log", "\r\n");
+				System.IO.File.AppendAllText("trans.log", content);
+				System.IO.File.AppendAllText("trans.log", "\r\n");
 			}
+			return String.Empty;
+			//if (content.Length < 351)
+			//{
+			//}
+			//else
+			//{
+			//    return string.Empty;
+			//}
 		}
 
 		private static string ExtractTrans(string html)
