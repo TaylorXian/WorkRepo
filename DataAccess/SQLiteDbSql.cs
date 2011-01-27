@@ -36,6 +36,11 @@ namespace DataAccess
 				Id INTEGER PRIMARY KEY, 
 				Name TEXT, 
 				Email TEXT);";
+		public const string CREATETABLE_SIGN =
+            @"CREATE TABLE IF NOT EXISTS Sign (
+				POI_ID INTEGER, 
+				UserId INTEGER, 
+				SignCount INTEGER);";
 	}
 }
 

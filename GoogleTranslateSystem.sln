@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpWorker", "HttpWorker\HttpWorker.csproj", "{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POIWeb", "POIWeb\POIWeb.csproj", "{55A1E60E-2BAC-4DBE-BB73-1103629AAFA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Proj", "Test.Proj\Test.Proj.csproj", "{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{6B85B18C-7854-4C16-8E90-E0F4A0A7B08E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTranslateAPI", "GoogleTranslateAPI\GoogleTranslateAPI.csproj", "{747718B3-D521-4C6A-8DD1-3D827427AF59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEntity", "DataEntity\DataEntity.csproj", "{767EDA74-F08D-4AB8-8C9E-AE7C13752ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelToSqlite", "ExcelToSqlite\ExcelToSqlite.csproj", "{AF7006D8-1955-4492-BBDC-C81835A3F8B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +15,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD0FE459-0AAE-4652-815F-BD59FC5E25ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{747718B3-D521-4C6A-8DD1-3D827427AF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A1E60E-2BAC-4DBE-BB73-1103629AAFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A1E60E-2BAC-4DBE-BB73-1103629AAFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A1E60E-2BAC-4DBE-BB73-1103629AAFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A1E60E-2BAC-4DBE-BB73-1103629AAFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B85B18C-7854-4C16-8E90-E0F4A0A7B08E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B85B18C-7854-4C16-8E90-E0F4A0A7B08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B85B18C-7854-4C16-8E90-E0F4A0A7B08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B85B18C-7854-4C16-8E90-E0F4A0A7B08E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767EDA74-F08D-4AB8-8C9E-AE7C13752ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767EDA74-F08D-4AB8-8C9E-AE7C13752ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767EDA74-F08D-4AB8-8C9E-AE7C13752ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767EDA74-F08D-4AB8-8C9E-AE7C13752ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7006D8-1955-4492-BBDC-C81835A3F8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7006D8-1955-4492-BBDC-C81835A3F8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7006D8-1955-4492-BBDC-C81835A3F8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7006D8-1955-4492-BBDC-C81835A3F8B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
