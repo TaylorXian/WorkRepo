@@ -8,6 +8,7 @@ using System.Threading;
 using HttpWorker;
 using System.Net;
 using System.Web;
+using org.in2bits.MyXls;
 
 namespace Test.Proj
 {
@@ -21,7 +22,13 @@ namespace Test.Proj
 			Console.WriteLine(AppDomain.CurrentDomain.BaseDirectory);
 			Console.WriteLine(Directory.GetCurrentDirectory());
 			Console.WriteLine();
-			
+			XlsDocument doc = new XlsDocument();
+			Worksheet s = doc.Workbook.Worksheets.Add("Review");
+			Row row = s.Rows.AddRow(1);
+			Cell c = s.Cells.Add(1, 1, "id");
+			s.Cells.Add(5, 5, "content");
+			doc.Save(true);
+
 			//Console.ReadKey();
 		}
 

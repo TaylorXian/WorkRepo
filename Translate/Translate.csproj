@@ -52,6 +52,12 @@
     <Compile Include="MyTranslate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HttpWorker\HttpWorker.csproj">
+      <Project>{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}</Project>
+      <Name>HttpWorker</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

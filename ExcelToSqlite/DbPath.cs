@@ -6,6 +6,7 @@ using System.IO;
 using DataAccess.SQLite;
 using DataAccess;
 using System.Data;
+using DataAccess.Excel;
 
 namespace ExcelToSqlite
 {
@@ -29,10 +30,10 @@ namespace ExcelToSqlite
             return dbpath;
         }
 
-        public static string InitExcel(string filename)
+        public static string InitExcelDb(string filename)
         {
-            string dbpath = DbPath.GetDbFilepath("./sqlite.db");
-            SQLiteAccess.ConnStringSQLite = SQLiteAccess.GetConnectionString(dbpath);
+			string dbpath = DbPath.GetDbFilepath(filename);
+			ExcelAccess.XLSConnectionString = ExcelAccess.GetConnectionString(dbpath);
             return dbpath;
         }
 

@@ -31,6 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MyXls.SL2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\MyXls.SL2.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\NPOI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -68,6 +76,10 @@
     <ProjectReference Include="..\HttpWorker\HttpWorker.csproj">
       <Project>{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}</Project>
       <Name>HttpWorker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Translate\Translate.csproj">
+      <Project>{749B3642-40CF-44CC-84F5-06E67599A66A}</Project>
+      <Name>Translate</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

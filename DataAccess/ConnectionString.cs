@@ -10,11 +10,11 @@ namespace DataAccess
 		public const string EXCEL =
 			"Provider=Microsoft.Jet.OLEDB.4.0;" +
 			"Data Source=POIInformation_excel2003(5).xls;" +
-			"Extended Properties=\"Excel 8.0;HDR=Yes;IMEX=1\"";
+			"Extended Properties=\"Excel 8.0;HDR=Yes;IMEX=2\"";
 		public const string EXCEL_TEMPLATE =
 			"Provider=Microsoft.Jet.OLEDB.4.0;" +
 			"Data Source={0};" +
-			"Extended Properties=\"Excel 8.0;HDR=Yes;IMEX=1\"";
+			"Extended Properties=\"Excel 8.0;HDR=Yes;IMEX=2\"";
 		public const string SQLITE_TEMPLATE =
 			"Data Source={0}";
 		public const string SQLITE =
