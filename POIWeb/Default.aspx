@@ -50,7 +50,7 @@
                 <h4>
                     获取签到数</h4>
                 <p>
-                    请求: <a href="http://220.113.40.164/api/getsign?poiid=123">http://220.113.40.164/api/getsign?poiid=123</a><br />
+                    请求: <a href="http://staging.5maiya.com:8888/api/getsign?poiid=123">http://staging.5maiya.com:8888/api/getsign?poiid=123</a><br />
                     poiid poi的ID
                     <br />
                     应答:
@@ -63,7 +63,7 @@
                     签到</h4>
                 <p>
                     根据poi的ID以及用户ID向该poi进行签到，如果成功则返回签到数，失败返回错误结果<br />
-                    请求: <a href="http://220.113.40.164/api/sign?poiid=123&userid=456">http://220.113.40.164/api/sign?poiid=123&userid=456</a><br />
+                    请求: <a href="http://staging.5maiya.com:8888/api/sign?poiid=123&userid=456">http://staging.5maiya.com:8888/api/sign?poiid=123&userid=456</a><br />
                     poiid poi的ID<br />
                     userid 用户ID
                     <br />
@@ -78,8 +78,8 @@
                 <p>
                     根据poi的ID以及用户ID获取该poi对应的评论信息列表，需要进行分页，如果成功则返回制定数量的评论，失败返回错误结果
                     <br />
-                    请求： <a href="http://220.113.40.164/api/getreview?poiid=123&userid=456&start=0&count=30">
-                        http://220.113.40.164/api/getreview?poiid=123&userid=456&start=0&count=30</a>
+                    请求： <a href="http://staging.5maiya.com:8888/api/getreview?poiid=123&userid=456&start=0&count=30">
+                        http://staging.5maiya.com:8888/api/getreview?poiid=123&userid=456&start=0&count=30</a>
                     <br />
                     poiid poi的ID<br />
                     userid 用户ID<br />
@@ -115,8 +115,8 @@
                 <p>
                     根据poi的ID以及用户ID对poi进行评论提交评分及文字评论内容等
                     <br />
-                    请求: <a href="http://220.113.40.164/api/review?poiid=123&userid=456&starlevel=8&content=good">
-                        http://220.113.40.164/api/review?poiid=123&userid=456&starlevel=8&content=good</a>
+                    请求: <a href="http://staging.5maiya.com:8888/api/review?poiid=123&userid=456&starlevel=8&content=good">
+                        http://staging.5maiya.com:8888/api/review?poiid=123&userid=456&starlevel=8&content=good</a>
                     <br />
                     poiid poi的ID<br />
                     userid 用户ID<br />
