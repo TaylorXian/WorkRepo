@@ -41,6 +41,16 @@ namespace DataAccess
 				POI_ID INTEGER, 
 				UserId INTEGER, 
 				SignCount INTEGER);";
+		public const string GET_REVIEW =
+			@"select 
+				User.Id AS userid, 
+				User.Name AS username, 
+				StarLvl AS starlevel, 
+				datetime(Review.DateTime) AS [date], 
+				Content as content 
+			from Review, User 
+			where merchantid = {0} and Userid = User.id 
+			limit {1} offset {2};";
 	}
 }
 

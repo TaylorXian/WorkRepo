@@ -73,10 +73,6 @@
       <Project>{767EDA74-F08D-4AB8-8C9E-AE7C13752ECC}</Project>
       <Name>DataEntity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HttpWorker\HttpWorker.csproj">
-      <Project>{37BEAE79-FCD7-4E05-AFA1-73A02D9601FF}</Project>
-      <Name>HttpWorker</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Translate\Translate.csproj">
       <Project>{749B3642-40CF-44CC-84F5-06E67599A66A}</Project>
       <Name>Translate</Name>
